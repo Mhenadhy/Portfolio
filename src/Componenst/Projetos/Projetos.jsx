@@ -15,12 +15,20 @@ export default function Projetos(){
     align-items: center;
     width: 100%;
     height: 250vh;
+    @media (max-width:500px){
+        height: 325vh;
+    }
     `
     const SessaoFigures = styled.section`
     display: flex;
     justify-content: space-around;
     height: 60vh;
     width: 100%;
+    @media (max-width:500px){
+        height: 80vh;
+        flex-direction: column;
+        align-items: center;
+    }
     & figure:hover{
         transform: scale(1.1);
     }
@@ -34,9 +42,22 @@ export default function Projetos(){
         width: 40vw;
         background-color: transparent;
         box-shadow: 0 0 2em;
+        border: solid white;
+        @media (max-width:500px){
+            height: 35vh;
+            width: 90vw;
+            border: solid white;
+        }
     }
     img{
         width: 38vw;
+        border-radius: 1rem;
+        @media (max-width:500px){
+            width: 83vw;
+            height: 20vh;
+            border-radius: 1rem;
+        
+        }
     }
     `
     const CaixaFigcap = styled.figcaption`
@@ -46,6 +67,11 @@ export default function Projetos(){
     justify-content: space-around;
     width: 35vw;
     height: 6vh;
+    @media (max-width:500px){
+        width: 100%;
+        height: 10vh;
+    }
+  
     `
     const Preact = styled.p`
     background-color: #62DAFA;
@@ -54,6 +80,10 @@ export default function Projetos(){
     width: 8vw;
     height: 3vh;
     font-size: 1.2em;
+    @media (max-width:500px){
+        width: 20vw;
+        font-size: 1.4rem;
+    }
     `
     const Pstyled = styled.p`
     background-color: #DE7496;
@@ -62,6 +92,11 @@ export default function Projetos(){
     width: 15vw;
     height: 3vh;
     font-size: 1.2em;
+    @media (max-width:500px){
+        width: 48vw;
+        font-size: 1.4rem;
+        
+    }
     `
     const Phtml = styled.p`
     background-color: #E55233;
@@ -69,6 +104,11 @@ export default function Projetos(){
     border-radius: 1em;
     width: 7vw;
     height: 3vh;font-size: 1.2em;
+    @media (max-width:500px){
+        width: 25vw;
+        font-size: 1.4rem;
+        
+    }
     `
     const Pcss = styled.p`
     background-color: #55B1E8;
@@ -77,6 +117,11 @@ export default function Projetos(){
     width: 7vw;
     height: 3vh;
     font-size: 1.2em;
+    @media (max-width:500px){
+        width: 25vw;
+        font-size: 1.4rem;
+        
+    }
     `
     return(
         <MainStyle>

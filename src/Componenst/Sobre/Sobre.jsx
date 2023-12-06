@@ -7,7 +7,10 @@ export default function Sobre() {
 
     const MainPrincipal = styled.main`
     width: 100%;
-    height: 80vh;
+    height: 100vh;
+    @media (max-width:500px){
+        height: 140vh;
+    }
 `
     const MainStyle = styled.main`
     display: flex;
@@ -16,6 +19,10 @@ export default function Sobre() {
     justify-content: space-around;
     width: 100%;
     height: 75vh;
+    @media (max-width:500px){
+     flex-direction:column ;
+     height: 140vh;
+    }
     `
     const SessaoSobre = styled.section`
     display: flex;
@@ -25,13 +32,25 @@ export default function Sobre() {
     height: 60vh;
     width: 60vw;
     color: #ffffff;
+    @media (max-width:500px){
+        height: 74vh;
+        width: 100%;
+    }
     h1{
         font-size: 2em;
+        @media (max-width:500px){
+            font-size: 2.3rem;
+        }
     }
     p{
         font-size: 2.3rem;
         width: 50vw;
         line-height: 3rem;
+        @media (max-width:500px){
+            font-size: 1.8rem;
+            line-height: 2rem;
+            width: 90vw;
+        }
     }
     nav{
         display: flex;
@@ -39,6 +58,11 @@ export default function Sobre() {
         align-items: end;
         width: 40vw;
         height: 20vh;
+        @media (max-width:500px){
+            height: 15vh;
+            width: 100%;
+        }
+        
         & a:hover{
              opacity: .3; transform: scale(1.5)
         }
@@ -47,6 +71,9 @@ export default function Sobre() {
             transition: 0.5s;
             border: solid green;
             border-radius: 1em;
+            @media (max-width:500px){
+                width: 15vw;
+            }
         }
     }
     `
@@ -57,6 +84,9 @@ export default function Sobre() {
     justify-content: space-around;
     width:40vw;
     height: 75vh;
+    @media(max-width:500px){
+        height: 50vh;
+    }
     & figure:hover{
         box-shadow: 1em 1em 3em #000;
         filter: grayscale(0);
@@ -75,13 +105,20 @@ export default function Sobre() {
     box-shadow: 0 0 2em;
     transition: all 0.5s ease;
     filter: grayscale(1);
-    height: 75vh;
-    width: 30vw;
+
+    @media (max-width:500px){
+        width: 70vw;
+        height: 50vh;
+    }
     img{
         border-radius: 1rem;
         width: 28vw;
         height: 40vh;
         transition: all 0.5s ease;
+        @media (max-width:500px){
+            width: 55vw;
+            height: 25vh;
+        }
     }
     `
     const Figprincipal = styled.figcaption`
@@ -103,13 +140,13 @@ export default function Sobre() {
         font-style: oblique;
         font-weight: bold;
         @media (max-width: 500px) {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
         p{
             font-size: 1.5rem;
             font-weight: normal;
             @media (max-width: 500px){
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
         }
     }

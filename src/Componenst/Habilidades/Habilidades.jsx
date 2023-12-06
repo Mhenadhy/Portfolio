@@ -19,7 +19,9 @@ export default function Habilidades() {
     text-align: center;
     @media (max-width: 500px){
         flex-direction: column;
-        font-size: 1.5rem;
+        font-size: 2rem;
+        height: 90vh;
+        justify-content: space-evenly;
     }
    `
    const SessaoF = styled.section`
@@ -28,7 +30,9 @@ export default function Habilidades() {
    justify-content: space-around;
    height: 50vh;
    @media (max-width: 500px){
-    height: 35vh;
+    height: 45vh;
+    width: 100%;
+    
    }
    `
     const IconFigure = styled.figure`
@@ -37,10 +41,16 @@ export default function Habilidades() {
    justify-content: space-evenly;
    width: 40vw;
    height: 15vh;
+   @media (max-width:500px){
+    width: 100%;
+   }
    img{
        width: 8vw;
        height: 12vh; 
        filter: grayscale(1);
+       @media (max-width:500px){
+        width: 25vw;
+       }
    }
    & img:hover{
        transform: scale(1.3);
